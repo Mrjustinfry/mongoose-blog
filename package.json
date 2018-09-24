@@ -1,0 +1,25 @@
+{
+  "name": "mongoose-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrjustinfry/mongoose-blog.git"
+  },
+  "author": "Justin Fry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.13",
+    "morgan": "^1.9.0",
+    "uuid": "^3.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Mrjustinfry/mongoose-blog/issues"
+  },
+  "homepage": "https://github.com/Mrjustinfry/mongoose-blog#readme"
+}
