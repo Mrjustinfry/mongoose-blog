@@ -3,12 +3,13 @@
 const mongoose = require('mongoose');
 
 const postSchema = mongoose.Schema({
-    "title": String,
-    "content": String,
+    "title": { type: String, required: true },
+    "content": { type: String },
     "author": {
         "firstName": String,
         "lastName": String
-    }
+    },
+    "created": {type: Date, default: Date.now }
 });
 
 postSchema.virtual('fullName').get(function () {
@@ -17,9 +18,11 @@ postSchema.virtual('fullName').get(function () {
 
 postSchema.methods.together = function () {
     return {
+        id: this._id,
         title: this.title,
         content: this.content,
-        author: this.fullName
+        author: this.fullName,
+        created: this.created
     };
 };
 
