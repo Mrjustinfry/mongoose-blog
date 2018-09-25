@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-const { PORT, DATABASE_URL } = require('./config');
-const { Blog } = require('./models');
+const { PORT, DATABASE_URL } = require('/config');
+const { Blog } = require('/models');
 
 const app = express();
 
